@@ -1,0 +1,117 @@
+/* style menu on header screen <md */
+
+main {
+    /* width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: #204056; */
+  }
+  
+  hgroup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  h3.nav01, h3.nav02 {
+      position: absolute;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+  
+  
+  
+  /*** button ***/
+  
+  button {
+    color: #FFF;
+    font-size: 20px;
+    border: 1px solid #FFF;
+    border-radius: 1px;
+    margin: 3px;
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-right:12px;
+    line-height: 32px;
+    transition: all 200ms ease-in-out;
+    &:hover {background-color: HSLA(0, 100%, 100%, .1)}
+  }
+  
+  
+  /*--- Nav |  01  |  Side-Slide --*/
+  
+  nav.side-slide {
+    background-color: #F75D5D;
+    top: 0;
+    left: -285px; 
+    height: 100%;
+    position: fixed;
+    width: 285px;
+    z-index: 999;
+    h3 {
+      color: #FFF;
+      top: 25px;
+      left: 240px;
+    }
+  }
+  
+  nav.side-slide ul{
+      margin-top: 70px;
+      border-top: 1px solid #F44646;
+    }
+  
+    nav.side-slide li {
+      text-align: center;
+      border-bottom: 1px solid #F44646;
+      line-height: 60px;
+      &:hover {
+        background-color: #F44646;
+      }
+    }
+  
+    nav.side-slide a {
+      color: #EDEDED;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      &:hover {
+        color: #fff;
+      }
+    }
+  
+  
+  /*--- Nav |  02  |  Side-Slide --*/
+  
+  nav.drop-down {
+    background-color: #FFC650;
+    text-align: center;
+    top: -100vh;
+    left: 0; 
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrow: column;
+    h3 {
+      color: #D05353;
+      top: 50px;
+      right: 150px;
+    }
+  }
+  
+  nav.drop-down li {line-height: 30px}
+  
+  nav.drop-down a {
+    color: #204056;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    &:hover{
+     color: #D05353;
+    }
+  }
+  
